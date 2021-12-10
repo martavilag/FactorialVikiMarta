@@ -12,32 +12,16 @@ namespace FactorialVikiMarta.Tests
             
             Assert.Equal(1, actual);
         }
-        
-        [Fact]
-        public void Return1WhenNumberIs1()
-        {
-            
-            int actual = Factorial.Calculate(1);
-            
-            Assert.Equal(1, actual);
-        }
-        
-        [Fact]
-        public void Return2WhenNumberIs2()
-        {
-            
-            int actual = Factorial.Calculate(2);
-            
-            Assert.Equal(2, actual);
-        }
 
-        [Fact]
-        public void Return6WhenNumberIs3()
+        [Theory]
+        [InlineData(1, 1)]
+        [InlineData(2, 2)]
+        [InlineData(3, 6)]
+        public void ReturnAFactorialOfTheGivenNumber(int number, int expected)
         {
+            int actual = Factorial.Calculate(number);
             
-            int actual = Factorial.Calculate(3);
-            
-            Assert.Equal(6, actual);
+            Assert.Equal(expected, actual);
         }
 
     }
