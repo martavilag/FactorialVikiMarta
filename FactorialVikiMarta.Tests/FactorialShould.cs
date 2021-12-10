@@ -17,6 +17,7 @@ namespace FactorialVikiMarta.Tests
         [InlineData(1, 1)]
         [InlineData(2, 2)]
         [InlineData(3, 6)]
+        [InlineData(4, 24)]
         public void ReturnAFactorialOfTheGivenNumber(int number, int expected)
         {
             int actual = Factorial.Calculate(number);
