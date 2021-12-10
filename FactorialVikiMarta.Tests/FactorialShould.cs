@@ -21,6 +21,16 @@ namespace FactorialVikiMarta.Tests
             
             Assert.Equal(1, actual);
         }
+        
+        [Fact]
+        public void Return2WhenNumberIs2()
+        {
+            
+            int actual = Factorial.Calculate(2);
+            
+            Assert.Equal(2, actual);
+        }
+
 
     }
 }
