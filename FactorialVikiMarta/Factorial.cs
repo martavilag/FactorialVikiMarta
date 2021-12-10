@@ -4,7 +4,7 @@
     {
         public static int Calculate(int i)
         {
-            throw new System.NotImplementedException();
+            return 1;
         }
     }
 }
