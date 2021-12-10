@@ -31,6 +31,14 @@ namespace FactorialVikiMarta.Tests
             Assert.Equal(2, actual);
         }
 
+        [Fact]
+        public void Return6WhenNumberIs3()
+        {
+            
+            int actual = Factorial.Calculate(3);
+            
+            Assert.Equal(6, actual);
+        }
 
     }
 }
