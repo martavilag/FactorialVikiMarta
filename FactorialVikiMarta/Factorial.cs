@@ -4,13 +4,14 @@
     {
         public static int Calculate(int number)
         {
-            if (number == 2 || number == 3)
-                return number * (number - 1);
-            if (number == 4)
-                return number * (number - 1) * (number - 2);
-            if (number == 5)
-                return number * (number - 1) * (number - 2) * (number - 3);
-            return 1;
+            int factorial = 1;
+
+            for (int i = 1; i <= number; i++)
+            {
+                factorial *= i;
+            }
+
+            return factorial;
         }
     }
 }
